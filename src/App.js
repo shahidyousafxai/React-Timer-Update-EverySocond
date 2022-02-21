@@ -11,7 +11,7 @@ const App = () => {
   useEffect(() => {
     const interval = setInterval(tick, 1000)
     return () => {
-      clearInterval(interval)
+      clearInterval(interval, tick)
     }
   }, [timer])
   return (
